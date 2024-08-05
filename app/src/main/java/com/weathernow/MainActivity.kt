@@ -16,7 +16,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val weatherViewModel = ViewModelProvider(this)[WeatherViewModel::class.java]
-        enableEdgeToEdge()
+
         setContent {
             WeatherNowTheme {
                 Surface(
